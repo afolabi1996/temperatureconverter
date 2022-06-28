@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./1738321.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Red Rose', sans-serif;
+}
+
+.calc-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, rgb(196, 18, 107) , rgb(4, 0, 255));
+    /* background-image: url(./multicolored_windows_11_logo_in_black_background_hd_windows_11.jpg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: 200px -20px;
+    height: 650px;
+    width: 400px;
+    margin-top: 5%;
+}
+
+.calc-box label{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.ktc, .ctk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+}
+
+.calc-box input{
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 15px 15px 15px;
+    height: 30px;
+    width: 150px;
+}
+
+button{
+    outline: none;
+}
+
+.calc-box button{
+    background: none;
+    border: 1px solid;
+    margin: 15px;
+    font-size: 22px;
+    width: 150px;
+    border-top: 5px double #63615e;
+    border-right: 4px solid #63615e;
+    border-bottom: 5px double #63615e;
+    border-left: 4px solid #63615e;
+    border-radius: 50px;
+}
+
+.calc-box button:hover{
+    background-color: #63615e;
+    transition: 0.25 ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#reset{
+    width:200px;
+    height: 50px;
+}
+
+.msg1,
+.msg2{
+    font-size: 20px;
+    color: rgb(17, 17, 17);
+    text-align: center;
+}
+
+@media screen and (max-width:1024px){
+    .calc-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-position: center center;
+        background-size: cover;
+        height: 650px;
+        width: 400px;
+        margin-top: 10%;
+    }
+}
